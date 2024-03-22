@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    font-family: "Source Code Pro", monospace;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#banner{
+    background-image: url('banner.webp');
+    height: 60vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: derecha 1s;
+}
+
+@keyframes derecha {
+    0%{
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+#arriba{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    animation: bajar 1s;
+}
+
+@keyframes bajar {
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+nav{
+    display: flex;
+    column-gap: 25px;
+}
+
+nav > a{
+    color: #2e1302;
+    text-decoration: none;
+}
+
+#banner > h1{
+    color: #FFC14E;
+    font-size: 4rem;
+    margin-left: 10vw
+
+}
+
+#boton{
+    margin-left: 10vw;
+    color: #FFFFFF;
+    background-color: #FFC14E;
+    width: fit-content;
+    padding: 5px 25px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+#about{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+    background-color: #F8F4E9;
+    background-image: url('https://svgsilh.com/png-1024/1185460.png');
+    background-repeat: no-repeat;
+    background-size: 50vh;
+    background-position: 5% center;
+    background-blend-mode: overlay;
+}
+
+#about > h1{
+    color: #432B1C;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#linea{
+    width: 80px;
+    height: 4px;
+    background-color: #FFC14E;
+}
+
+#about > p {
+    width: 30%;
+    text-align: center;
+}
+
+button{
+    background-color: transparent;
+    border: 2px #FFC14E solid;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px 18px;
+}
